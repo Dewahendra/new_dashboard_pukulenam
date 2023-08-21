@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard - PukulEnam</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="nav-fixed">
+        <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-white" id="sidenavAccordion">
+            <!-- Sidenav Toggle Button-->
+            <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i data-feather="menu"></i></button>
+           
+            <!-- Navbar Brand-->
+            <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="#">PukulEnam</a>
+
+            <!-- Navbar Items-->
+            <ul class="navbar-nav align-items-center ms-auto">
+                
+               
+                <!-- User Dropdown-->
+                <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
+                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="assets/img/illustrations/profiles/profile-1.png" /></a>
+                    <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
+                        <h6 class="dropdown-header d-flex align-items-center">
+                            <img class="dropdown-user-img" src="assets/img/illustrations/profiles/profile-1.png" />
+                            <div class="dropdown-user-details">
+                                <div class="dropdown-user-details-name">Valerie Luna</div>
+                                <div class="dropdown-user-details-email">vluna@aol.com</div>
+                            </div>
+                        </h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#!">
+                            <div class="dropdown-item-icon"><i data-feather="settings"></i></div>
+                            Account
+                        </a>
+                        <a class="dropdown-item" href="login.html">
+                            <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
+                            Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sidenav shadow-right sidenav-light">
+                    <div class="sidenav-menu">
+                        <div class="nav accordion" id="accordionSidenav">
+                            
+                            <!-- Sidenav Accordion (Dashboard)-->
+                            <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseDashboards" aria-expanded="false" aria-controls="collapseDashboards">
+                                <div class="nav-link-icon"><i data-feather="slack"></i></div>
+                                Dashboards
+                                <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseDashboards" data-bs-parent="#accordionSidenav">
+                                <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
+                                    <a class="nav-link" href="dashboard.html">
+                                        Performance
+                                    </a>
+                                    <a class="nav-link" href="auto-mksa.html">Auto MKSA</a>
+                                    <a class="nav-link" href="#">Artikel</a>
+                                </nav>
+                            </div>
+                </nav>
+            </div>
+            <!-- Content -->
+            <div id="layoutSidenav_content">
+                <main>
+                    <header class="page-header pb-5">
+                        <div class="container-xl px-4">
+                            <div class="page-header-content pt-4">
+                                <div class="row align-items-center justify-content-between">
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- Main page content-->
+                    <div class="container-xl px-4 mt-n10">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                            <div id="default">
+                                <div class="card mb-2">
+                                    <div class="card-header">AUTO MKSA</div>
+                                    <div class="card-body">
+                                        <h4>Gambar 1</h4>
+                                        <!-- Component Preview-->
+                                        <div class="sbp-preview">
+                                            <div class="sbp-preview-content">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="sumber-gambar1">Sumber Gambar</label>
+                                                        <input class="form-control" id="sumber-gambar1" type="text" />
+                                                    </div>
+                                                    
+                                                    <div class="mb-4">
+                                                        <label for="url1">URL</label>
+                                                        <textarea class="form-control" id="url1" rows="3"></textarea>
+                                                    </div>
+
+                                                    <div class="mb-4 text-center">
+                                                        <img width="400px" src="" alt="img-preview1" id="image1" style="margin: 0 auto; border: 2px solid #f85f65" />
+                                                      </div>
+                                                </form>
+                                            </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h4>MKSA 1</h4>
+                                                <!-- Component Preview-->
+                                                <div class="sbp-preview">
+                                                    <div class="sbp-preview-content">
+                                                        <form>
+                                                            <div class="mb-4">
+                                                                <label for="url2">URL</label>
+                                                                <textarea class="form-control" id="url2" rows="3"></textarea>
+                                                            </div>
+        
+                                                            <div class="mb-4 text-center">
+                                                                <img width="400px" src="" alt="img-preview2" id="image2" style="margin: 0 auto; border: 2px solid #f85f65" />
+                                                              </div>
+                                                        </form>
+                                                    </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <h4>MKSA 2</h4>
+                                                        <!-- Component Preview-->
+                                                        <div class="sbp-preview">
+                                                            <div class="sbp-preview-content">
+                                                                <form>
+                                                                    <div class="mb-4">
+                                                                        <label for="url3">URL</label>
+                                                                        <textarea class="form-control" id="url3" rows="3"></textarea>
+                                                                    </div>
+                
+                                                                    <div class="mb-4 text-center">
+                                                                        <img width="400px" src="" alt="img-preview3" id="image3" style="margin: 0 auto; border: 2px solid #f85f65" />
+                                                                      </div>
+                                                                </form>
+                                                            </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card-body">
+                                                                <h4>MKSA 3</h4>
+                                                                <!-- Component Preview-->
+                                                                <div class="sbp-preview">
+                                                                    <div class="sbp-preview-content">
+                                                                        <form>
+                                                                            <div class="mb-4">
+                                                                                <label for="url4">URL</label>
+                                                                                <textarea class="form-control" id="url4" rows="3"></textarea>
+                                                                            </div>
+                        
+                                                                            <div class="mb-4 text-center">
+                                                                                <img width="400px" src="" alt="img-preview4" id="image4" style="margin: 0 auto; border: 2px solid #f85f65" />
+                                                                              </div>
+                                                                        </form>
+                                                                    </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-12 text-center mb-4">
+                                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Submit</button>
+                                                                      </div>
+
+                                                                      <!-- Modal -->
+                                                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                                                            <div class="modal-content">
+                                                                                 <div class="modal-header">
+                                                                                   <h5 class="modal-title" id="exampleModalCenterTitle">Confirmation</h5>
+                                                                                 <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                                </div>
+                                                                            <div class="modal-body">Apakah Anda yakin ingin melakukan submit? Perubahan yang Anda buat akan dikirim.</div>
+                                                                        <div class="modal-footer"><button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save changes</button></div>
+        </div>
+    </div>
+</div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </main>
+                <footer class="footer-admin mt-auto footer-light">
+                    <div class="container-xl px-4">
+                        <div class="row">
+                            <div class="col-md-6 small">&copy; 2023 PukulEnam</div>
+                            <div class="col-md-6 text-md-end small">
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables/datatables-simple-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js" crossorigin="anonymous"></script>
+        <script src="js/litepicker.js"></script>
+
+        <!-- MKSA Script -->
+    <script>
+        const textBox1 = document.getElementById('url1');
+        const img1 = document.getElementById('image1');
+  
+        const textBox2 = document.getElementById('url2');
+        const img2 = document.getElementById('image2');
+  
+        const textBox3 = document.getElementById('url3');
+        const img3 = document.getElementById('image3');
+  
+        const textBox4 = document.getElementById('url4');
+        const img4 = document.getElementById('image4');
+  
+        textBox1.addEventListener('input', (e) => {
+          img1.src = e.target.value;
+        });
+  
+        textBox2.addEventListener('input', (e) => {
+          img2.src = e.target.value;
+        });
+  
+        textBox3.addEventListener('input', (e) => {
+          img3.src = e.target.value;
+        });
+  
+        textBox4.addEventListener('input', (e) => {
+          img4.src = e.target.value;
+        });
+      </script>
+    </body>
+</html>
